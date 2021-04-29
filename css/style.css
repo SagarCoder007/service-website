@@ -1,48 +1,49 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family:cursive;
+    margin: 0;
+    padding: 0; 
 }
 body{
    scroll-behavior: smooth;
     
 }
-.contentbox img{
-    width: 100%;
-    height: 100vh;
-    display: block;
+.header{
+}
+  .header .image {
+    
+    width:108%;
+    height: 800px;
+    margin: auto;
 
 
 
 }
 
 ul{
-    position: absolute;
-    top:0px;
-    right: 455px;
-    background-color: rgb(0, 0, 0);
-    
+  display: flex;
+  position: absolute;
+  top: 10px;
+  /* right: 10px; */
+  text-decoration: none;
     
     
 }
 ul li {
-    display:inline-block;
-    padding:20px;
     list-style-type:none;
-    font-size:18px;
-    margin: 10px 0 0 10px;
+    margin: 23px;
+    padding: 5px;
+ 
 }
 ul li a {
     transition:0.5s ease;
     text-decoration: none;
     padding: 10px;
-    color:rgb(235, 235, 235);
+    color:rgb(0, 0, 0);
+    border-radius: 15px;
 }
 ul li a:hover{
-    background-color:rgb(233, 233, 233);
-    color: rgb(0, 0, 0);
-    border-radius:25%;
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .services{
     width: 100%;
@@ -75,22 +76,30 @@ ul li a:hover{
     font-size: 23px;
     background-color:black;
     border-radius: 20px;
+    transition:0.5s ease;
 }
 .head .btn1:hover{
-    background-color:transparent;
-    color: rgb(5, 2, 2);
-    border-radius:25%;
-    /* border:2px solid black; */
-    transition: 0.5s ease;
+    background-color: transparent;
+    color:black;
 }
+
 
 /* -----------SERVICES------------ */
+/* 
 
-.servicebox h2{
-    text-align: center;
-    padding-top: 40px;
-    font-size: 50px;
-}
+  .server{
+     display: block;
+     background-color: chartreuse;
+    position:absolute;
+    width:400px;
+    top: 901px;
+    left: 663px;
+    color: rgb(0, 0, 0);
+    font-size: 59px;
+    font-weight: 700;
+
+} */
+
 /* .services.icon{
     display: block;
     width: 10px;
@@ -132,11 +141,11 @@ ul li a:hover{
     top: 20px;
     right: 10px;
 } */
-.services{
+/* .services{
     display: flex;
     justify-content: center;
     align-items: center;min-height: 100vh;
-    /* background: linear-gradient(#0f4675,#0f4675 50%, #fff 50%,#fff 100%); */
+    background: linear-gradient(#0f4675,#0f4675 50%, #fff 50%,#fff 100%);
 }
 .servicebox {
     width: 1500px;
@@ -164,25 +173,61 @@ ul li a:hover{
     text-align: center;
 
 }
-.services .server{
-   position: absolute;
-   top: 860px;
-   left: 670px;
-   color: rgb(0, 0, 0);
-   font-size:59px;
-   font-weight: 700;
-
-}
 .services .server span{
     color:#323250;
 }
 .contentbox img{
     opacity:0.9;
+} */
+
+
+
+
+#services{
+    margin: 34px;
+    display: flex;
 }
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #3a9183;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+  #server{
+      font-size: 2.6rem;
+      text-align: center;
+  }
+
 
 /*--------------------PROJECTS--------------------*/
 
-.sites {
+#sites {
+    width: 100%;
+    height: 900px;
+}
+#pro{
+    display: flex;
+    align-items: center;
+}
+#impro img{
+  height: 160px;
+margin: auto;
+display: block;
+}
+/* .sites {
     width: 100%;
     height: 900px;
     background-color: chartreuse;
@@ -193,6 +238,90 @@ ul li a:hover{
 .ourprojects .projects{
     font-size:59px;
 }
+.imgpro{
+    display: flex;
+    justify-content: center;
+
+}
+.imgpro img{
+    height: 400px;
+    width: 400px;
+    transition:0.3s ease;
+    flex-wrap:wrap;
+    margin:10px;
+
+
+}
+.imgpro img:hover{
+opacity:0.5;
+
+} */
+
+/*--------------------CONATCT FORM--------------------*/
+
+
+.form {
+    height:1400px;
+    width:100%;
+    margin: auto;
+    
+}
+.application{
+    display: flex;
+    flex-direction: column;
+    /* vertical-align: middle; */
+    height: 100px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    top: -1200px;
+    right: 374px;
+    
+}
+
+
+.application input {
+    height: 52px;
+    width: 1000px;
+    text-align: center;
+    padding-left: 530px;
+    padding-right: 474px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: blue;
+    padding: 23px;
+
+} 
+
+.application h2 {
+    color: white;
+    font-size: 70px;
+    height:200px;
+    width:100%;
+    margin-bottom:100px;
+    margin-left:320px;
+}
+ .application a {
+    list-style-type: none;
+    text-decoration: none;
+    border: 1px solid lightsalmon;
+    color: white;
+    font-size: 35px;
+    background-color: blue;
+    margin-top:40px;
+    text-align: center;
+    margin-left:270px;
+    width: 500px;
+}
+
+.application a:hover {
+    color: white;
+    background-color: red;
+    border-radius: 100%;
+    transition: 0.6s ease;
+} 
+
+
 
 
 
